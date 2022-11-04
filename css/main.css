@@ -294,7 +294,8 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-self: center; }
   .wrapper .menu div {
     padding: 5%; }
   .wrapper .menu p:hover {
@@ -308,13 +309,15 @@ html {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-self: center; }
   .wrapper .nosotros .subNosotros.guia {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    align-self: center;
     padding: 5%; }
     .wrapper .nosotros .subNosotros.guia .guia1 {
       order: 1; }
@@ -342,6 +345,7 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    align-self: center;
     flex-wrap: nowrap; }
     .wrapper .foot .redes {
       align-self: center; }
@@ -351,4 +355,5 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row; } }
+    align-self: center;
+    align-self: center; } }

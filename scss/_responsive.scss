@@ -67,8 +67,8 @@
             }
         }
         .catalogo {
-            @include flex-column-center-w-sb;
-            flex-direction: row;
+            @include flex-column-center-w-sb; 
+            align-self: center;           
         }
     }
 
