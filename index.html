@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ferreteria Online</title>
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css"> <!-- ubicacion del css que dará formato visual a la web -->
     </head> 
 
-    <body class="wrapper"> 
-        <div class="logo"><img src="./imagenes/logo.png" title="logo" alt="logo principal de la pagina"></a></div>        
-        <nav class="menu">
+     <body class="wrapper">  <!--defino una clase para el body, para implementar cambios a gran escala -->
+        <div class="logo"><img src="./imagenes/logo.png" title="logo" alt="logo principal de la pagina"></a></div>  <!-- logo de la web-->       
+        <nav class="menu"> <!--defino el menu de navegacion entre todas las html. -->
             <div><a href="./index.html">HOME</a></div>
             <div><a href="./pages/griferias.html">GRIFERIAS</a></div>
             <div><a href="./pages/agua-fusion.html">AGUA-FUSIÓN</a></div>
@@ -18,9 +18,9 @@
             <div><a href="./pages/electro.html">ELECTRICIDAD</a></div>
             <div><a href="./pages/guia.html">¿CÓMO COMPRAR?</a></div>
         </nav>      
-        <div class="tituof"> 
+        <div class="tituof"> <!-- se observan multiples clases anidadas en el codigo, es para disponer de la posibilidad de hacer grids y flexs anidados-->
             <spam class="titulo">OFERTAS SEMANALES</spam>            
-            <section class="ofertas">            
+            <section class="ofertas"> <!-- sección de ofertas semanales, con imagenes que te redirigen a un futuro sector de ventas que se desarrollará con javascript al momento de llegar a ese curso-->           
                <div class="of1"><a href="./imagenes/ofsem.png"target="_blank"><img src="./imagenes/of1.jfif" title="oferta1" alt="Primera oferta disponible hasta acabar stock"></a> </div> 
                <div class="of2"><a href="./imagenes/ofsem.png"target="_blank"><img src="./imagenes/of2.jfif" title="oferta2" alt="Segunda oferta disponible hasta acabar stock"></a> </div> 
                <div class="of3"><a href="./imagenes/ofsem.png"target="_blank"><img src="./imagenes/of2.jfif" title="oferta3" alt="Tercera oferta disponible hasta acabar stock"></a> </div> 
@@ -28,8 +28,8 @@
                <div class="of5"><a href="./imagenes/ofsem.png"target="_blank"><img src="./imagenes/of2.jfif" title="oferta5" alt="Quinta oferta disponible hasta acabar stock"></a> </div> 
             </section>
         </div>
-        <div class="nosotros">
-            <div class="subNosotros nos">
+        <div class="nosotros"> <!-- esta clase se recicla para aprovechar solo un grid para darle orden a todas las paginas -->    
+            <div class="subNosotros nos"> <!-- esta clase se compone de dos partes, para poder reciclar un grid y utilizarlo en multiples htmls y ademas poder realizar cambios en ambas secciones -->
                 <img src="./imagenes/ramon_valls.jpg" title="ramon_valls" alt="Fundador ramon_valls, el creador">
                 <p1> FERRETERÍA BARCELONA S.A. DESDE 1900 A TU SERVICIO.</p1>
                 <h1>“Ferretería Barcelona, S.A.” es un negocio familiar que cuenta con más de 118 años de experiencia en el sector de la ferretería. En 1900 Ramon Valls abrió el primer establecimiento.Cien años después, hemos ido ampliando hasta abrir 3 tiendas más en la ciudad condal, todas ellas dirigidas por la cuarta generación. Somos una empresa tradicional, con tiendas de proximidad en contacto directo con el cliente, basada en la confianza, la garantía y la seguridad.
@@ -38,9 +38,9 @@
         </div>
     
 
-        <footer class="foot">
-            <div class="contacto">
-                <form action="">
+        <footer class="foot"><!-- clase utilizada para grid -->
+            <div class="contacto"> <!-- clase para anidar un flex dentro del grid anterior -->
+                <form action=""> <!-- formulario de contacto para el cliente-->
                 <h2>CONTACTO</h2>
                 <input type="text" name="Nombre" placeholder="Nombre">
                 <input type="text" name="Correo" placeholder="Correo">
@@ -48,7 +48,7 @@
                 <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
                 <input type="button" value="ENVIAR" id="boton">
             </div>
-            <div class="redes">
+            <div class="redes"> <!-- redes sociales de la empresa, iconos con hipervinculo -->
                 <div><a href="https://twitter.com/?lang=es"target="_blank"><img src="./imagenes/twitter.png" title="twitter" alt="twitter"></a></div>
                 <div><a href="https://es-la.facebook.com/"target="_blank"><img src="./imagenes/facebook.png" title="facebook" alt="facebook"></a></div>
                 <div><a href="https://www.instagram.com/"target="_blank"><img src="./imagenes/instagram.png" title="instagram" alt="instagram"></a></div>

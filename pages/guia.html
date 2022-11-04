@@ -5,12 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>¿Cómo comprar?</title>
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css"> <!-- ubicacion del css que dará formato visual a la web -->
     </head>
 
-    <body class="wrapper">
-        <div class="logo"><img src="../imagenes/logo.png" title="logo" alt="logo" title="logo"></a></div>        
-        <nav class="menu">
+    <body class="wrapper"> <!--defino una clase para el body, para implementar cambios a gran escala -->
+        <div class="logo"><img src="../imagenes/logo.png" title="logo" alt="logo" title="logo"></a></div>  <!-- logo de la web-->            
+        <nav class="menu"> <!--defino el menu de navegacion entre todas las html. -->
             <div><a href="../index.html">HOME</a></div>
             <div><a href="./griferias.html">GRIFERIAS</a></div>
             <div><a href="./agua-fusion.html">AGUA-FUSIÓN</a></div>
@@ -19,9 +19,9 @@
             <div><a href="./guia.html">¿CÓMO COMPRAR?</a></div>
         </nav>
         
-        <div class="nosotros">
-            <div class="subNosotros guia">
-                <h1 class="guia1">¿Cómo comprar?</h1>
+        <div class="nosotros"> <!-- esta clase se recicla para aprovechar solo un grid para darle orden a todas las paginas -->    
+            <div class="subNosotros guia"> <!-- catalogo. sub clase compuesta para ser incluida en el grid main y asi no repetir codigo--> 
+                <h1 class="guia1">¿Cómo comprar?</h1> <!-- grid donde se explica como comprar, luego se convierte en flex para ser responsive--> 
                 <div class="guia2"> <img src="../imagenes/guia1.png" title="guia1" alt="imagen guia para realizar compra"></div>
                 <div class="guia3"> <img src="../imagenes/guia2.png" title="guia2" alt="imagen guia para realizar compra"></div>
                 <div class="guia4"> <img src="../imagenes/guia3.png" title="guia3" alt="imagen guia para realizar compra"></div>
@@ -32,9 +32,9 @@
                 <p4 class="guia9" > Ingrese su tarjeta para realizar el pago </p4>
             </div>    
         </div> 
-        <footer class="foot">
-            <div class="contacto">
-                <form action="">
+        <footer class="foot"> <!-- clase utilizada para grid main -->
+            <div class="contacto"><!-- clase para anidar un flex dentro del grid anterior --> 
+                <form action=""> <!-- formulario de contacto para el cliente-->
                 <h2>CONTACTO</h2>
                 <input type="text" name="Nombre" placeholder="Nombre">
                 <input type="text" name="Correo" placeholder="Correo">
@@ -43,7 +43,7 @@
                 <input type="button" value="ENVIAR" id="boton">
             </div>
 
-            <div class="redes">
+            <div class="redes"> <!-- redes sociales de la empresa, iconos con hipervinculo -->
                 <div><a href="https://twitter.com/?lang=es"target="_blank"><img src="../imagenes/twitter.png" title="twitter" alt="twitter"></a></div>
                 <div><a href="https://es-la.facebook.com/"target="_blank"><img src="../imagenes/facebook.png" title="facebook" alt="facebook"></a></div>
                 <div><a href="https://www.instagram.com/"target="_blank"><img src="../imagenes/instagram.png" title="instagram" alt="instagram"></a></div>
