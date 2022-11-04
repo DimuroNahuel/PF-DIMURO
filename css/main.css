@@ -230,8 +230,10 @@ html {
       grid-column: 3 / 4; }
   .wrapper .foot {
     grid-area: foot;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; }
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between; }
     .wrapper .foot .contacto {
       width: 45rem;
       margin: 5%;
@@ -268,9 +270,10 @@ html {
           transform: scale(1.05);
           transition: all 0.5s ease; }
     .wrapper .foot .redes {
+      width: 25%;
       border: 5px solid #092327;
       background: rgba(0, 0, 0, 0.6);
-      padding: 3%;
+      padding: 1%;
       margin: 5%;
       border-radius: 0.7rem;
       grid-column: 3/3;
@@ -287,6 +290,7 @@ html {
 
 @media (min-width: 111px) and (max-width: 991px) {
   .wrapper .menu, .wrapper .tituof .ofertas {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -339,6 +343,8 @@ html {
     align-items: center;
     flex-wrap: wrap;
     flex-wrap: nowrap; }
+    .wrapper .foot .redes {
+      align-self: center; }
   .wrapper .catalogo {
     display: flex;
     flex-direction: column;

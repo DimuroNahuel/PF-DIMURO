@@ -1,8 +1,10 @@
-.foot {
-    grid-area: foot;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    .contacto {
+.foot { // en el foot, ubico 2 sectores importantes de la pagina, el formulario de contacto y de las redes en forma de grid. para poder separar a gusto estos elementos
+    grid-area: foot;// acá defino qué parte del body-grid es este item. 
+    display: flex; //defino flex dentro del grid, para ubicar las partes del foot.
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    .contacto { //fabricando todo el formulario de contacto.
         width: 45rem;
         margin: 5%;
         padding: 1rem 2rem;
@@ -44,10 +46,11 @@
         }            
     }
      
-    .redes {
+    .redes { // estilos y animacion para las redes.
+        width: 25%;
         border: $bordemain;
         background: $bgmain;
-        padding: 3%;
+        padding: 1%;
         margin: 5%;
         border-radius: $radio;    
         grid-column: 3/3;

@@ -1,9 +1,8 @@
-.catalogo {
+.catalogo { // catalogo del sitio, acá ordeno los item del catalogo, ubicandolos en la pagina y dandole formatos.
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-
     margin: 5%;
     border: $bordemain;
     background: $bgmain;
@@ -11,13 +10,13 @@
     box-sizing: border-box;
     border-radius: $radio;
     justify-items: center;
-    img {
+    img { // personalizando las imagenes del catalogo para embellecer la vista para el cliente.
         width: 50%;
         margin: 1%;
         border-radius: $radio;
         border: $bordemain;
     }
-    .item1 {
+    .item1 { //ubicacion de los items del catalogo.
         grid-area: item1;
         grid-column: 1/2;
         grid-row: 1/2;

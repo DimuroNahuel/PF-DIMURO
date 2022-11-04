@@ -1,4 +1,4 @@
-@media (min-width: 111px) and (max-width: 991px) {
+@media (min-width: 111px) and (max-width: 991px) { //media para cambiar la disposicion de la web segun el tamaño de la pantalla.
     .wrapper{
         .menu, .tituof .ofertas {
         @include flex-column-center-w-sb;         
@@ -22,12 +22,12 @@
         }
         .nosotros{
             .subNosotros.nos {
-                @include flex-column-center-w-sb;
+                @include flex-column-center-w-sb; //usando los includes para acortar codigo.
             }
             .subNosotros.guia {
                 @include flex-column-center-w-sb;
                 padding: 5%;
-                .guia1 {
+                .guia1 { //cambiando de posicion los elementos de la guia, ya que antes estaba ordenado con grids y puestos en paralelo las imagenes con su descripcion.
                     order: 1;
                 }
                 .guia2 {
@@ -62,6 +62,9 @@
         .foot {
             @include flex-column-center-w-sb;
             flex-wrap: nowrap;
+            .redes{
+                align-self: center;
+            }
         }
         .catalogo {
             @include flex-column-center-w-sb;

@@ -1,7 +1,7 @@
 .nosotros{ 
-    grid-area: nosotros;
+    grid-area: nosotros; // acá defino qué parte del body-grid es este item. 
 
-    .subNosotros,.guia {
+    .subNosotros,.guia { //reutilizando codigo para dos elementos distintos, que tendrán la misma ubicacion en dos paginas distintas y se reciclarán sus atributos.
         margin: 10%;
         background: $bgmain;
         padding: 1rem;
@@ -54,7 +54,7 @@
         .guia2,.guia3,.guia4,.guia5 {
             text-align: center;
             padding: 5%;
-            filter: grayscale(100%);
+            filter: grayscale(100%); //poniendo transiciones a las mismas imagenes con solo un codigo.
             transition: $transition;
         }
         .guia2:hover, .guia3:hover, .guia4:hover, .guia5:hover {
@@ -72,7 +72,7 @@
             align-self: center;
             font-size: 300%;
         }  
-        .guia1 {
+        .guia1 { //posicionando los elementos de la guia, aquí estará la imagen ejemplo con su descripcion en paralelo.
             font-size: 600%;
             text-align: center;
             grid-area: guia1;
