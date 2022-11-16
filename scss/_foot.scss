@@ -62,8 +62,11 @@
             width: 20%;
             filter: invert(9%) sepia(48%) saturate(686%) hue-rotate(140deg) brightness(96%) contrast(96%);
             &:hover {
-                transform: scale(1.25);
-                transition: $transition;
+                transform: scale(1.5);
+                transition: $transition;                
+                background-color: #ef8354; 
+                border-radius: $radio;
+                transition: $transition;                             
             }        
         }        
     }        

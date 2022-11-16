@@ -1,0 +1,12 @@
+$bordemain: 5px solid #092327; //defino variables y mixins para no repetir codigo y poder cambiar mas facilmente el codigo desde acá.
+$bgmain: rgba(0, 0, 0, 0.6);
+$radio: 0.7rem;
+$transition: all 0.5s ease;
+@mixin flex-column-center-w-sb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
